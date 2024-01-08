@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 15px;
+}
+section {
+  margin-bottom: 80px;
+}
+header,
+footer {
+  padding: 50px 0;
+}
+h2 {
+  margin-bottom: 20px;
+}
+textarea {
+  width: 100%;
+}
+.cont {
+  margin-top: 40px;
+}
+#menu-btn {
+  font-size: 40px;
+  font-weight: 900;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  line-height: 30px;
+}
+.accordeon {
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+footer {
+  margin-top: 500px;
+}
+
+/* Плавная прокрутка */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Раскрывающееся меню*/
+
+nav {
+  display: none;
+}
+nav.open {
+  display: block;
+}
+
+/* Аккордеон*/
+.accordeon-text {
+  display: none;
+}
+
+.accordeon-text.open {
+  display: block;
+}
+
+/* Табы */
+
+.cont {
+  display: none;
+}
+
+.cont.open {
+  display: block;
+}
+
+/* Модальное окно */
+
+#modal {
+  display: none;
+  position: fixed;
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+#modal.open {
+  display: block;
+  z-index: 100;
+}
+
+#modal button {
+  margin-top: 50px;
+}
+
+/**/
+
+#scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+/* CSS selectors */
+
+/* h1,
+h2,
+h3 {
+  font-family: "Courier New", 'Courier New', Courier, monospace;
+}
+
+h2,
+h3 {
+  background-color: yellow;
+}
+
+#css p {
+  background-color: green;
+}
+#css > p {
+  background-color: green;
+} */
+
+#css h3 ~ p {
+  background-color: green;
+}
+
+#css h3 + p {
+  background-color: red;
+}
+
+.heading {
+  color: red;
+}
+
+.heading.small {
+  color: blue;
+}
+
+h1 {
+  font-size: 60px;
+  color: red;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+
+@media screen and (max-width 768px) {
+  h1 {
+    font-size: 40px;
+    color: aqua;
+  }
+}

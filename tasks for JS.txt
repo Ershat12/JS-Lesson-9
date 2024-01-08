@@ -1,0 +1,14 @@
+ Станислав Богданов: 1. Кнопка меню - раскрывается по нажатию, контент кнопки меняется
+2. Прокрутка - ссылки в меню прокручивают экран до соответствующей секции (element.offsetTop, element.scrollTo)
+3. Аккордеон - при нажатии, соответствующий текст раскрывается, остальные закрываются (element.classList.add, element.classList.remove, loops)
+4. Табы - при нажатии в контейнере отображается соответствующий контент
+5. Подсчёт слов/символов - при вводе текста отображается кол-во слов/символов (element.value, element.textContent, arrays, array.length)
+6. Модальное окно - при нажатии раскрывается на весь экран, содержит кнопку закрытия
+
+
+Станислав Богданов: for (let j = 0; j < accordeonTexts.length; j++) {
+  accordeonTexts[j].classList.remove("open");
+}
+ Станислав Богданов: accordeonTexts.forEach((text) => {
+      text.classList.remove("open");
+    });

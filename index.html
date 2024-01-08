@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="heading-class" id="heading-id" data-test="heading-test">
+        DOM Manipulation
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <button class="menu-btn" data-target="acc-section">
+              Accordeon
+            </button>
+          </li>
+          <li>
+            <button class="menu-btn" data-target="tabs-section">Tabs</button>
+          </li>
+          <li>
+            <button class="menu-btn" data-target="count-section">
+              Word/Character count
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button id="menu-btn" class="qwer asdf">M</button>
+    </header>
+
+    <section>
+      <form
+      id="form"
+      action="mailto:test@gmail.com"
+      method="post"
+      enctype="text/plain"
+      >
+        FirstName:
+        <input
+        id="input"
+        type="text"
+        name="FirstName"
+        placeholder="Name"
+        value="John"
+        />
+        <br />
+        Email:
+        <input type="text" name="Email" placeholder="Введите свой имейл" />
+        <br />
+        <input type="submit" value="Отправить" />
+      </form>
+    </section>
+    <section>
+      
+    </section>
+
+    <section id="acc-section" data-aos="fade-up">
+      <h2>Accordeon</h2>
+      <div class="accordeon">
+        <button class="accordeon-btn" id="acc-btn1">Button 1</button>
+        <div class="accordeon-text" id="acc-text1">
+          Accordeon text 1 Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Amet culpa asperiores placeat incidunt? Deserunt pariatur
+          corrupti excepturi! Dignissimos, ab aperiam.
+        </div>
+      </div>
+      <div class="accordeon">
+        <button class="accordeon-btn" id="acc-btn2">Button 2</button>
+        <div class="accordeon-text" id="acc-text2">
+          Accordeon text 2 Sit amet, consectetur adipisicing elit. Amet culpa
+          asperiores placeat incidunt? Deserunt pariatur corrupti excepturi!
+          Dignissimos, ab aperiam.
+        </div>
+      </div>
+      <div class="accordeon">
+        <button class="accordeon-btn" id="acc-btn3">Button 3</button>
+        <div class="accordeon-text" id="acc-text3">
+          Accordeon text 3 Ipsum dolor sit amet, consectetur adipisicing elit.
+          Amet culpa asperiores placeat incidunt? Deserunt pariatur corrupti
+          excepturi! Dignissimos, ab aperiam.
+        </div>
+      </div>
+    </section>
+
+    <section id="tabs-section" data-aos="fade-up">
+      <h2>Tabs</h2>
+      <div>
+        <button class="tab" id="tab1" data-target="cont1">Tab 1</button>
+        <button class="tab" id="tab2" data-target="cont2">Tab 2</button>
+        <button class="tab" id="tab3" data-target="cont3">Tab 3</button>
+      </div>
+      <div>
+        <div class="cont open" id="cont1">
+          <h3>Content 1</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit
+          odio odit ab voluptatum quas exercitationem corporis accusantium
+          aspernatur architecto. Iure officiis commodi neque exercitationem,
+          minus corporis nobis consequuntur necessitatibus.
+        </div>
+        <div class="cont" id="cont2">
+          <h3>Content 2</h3>
+          Eligendi sit odio odit ab voluptatum quas exercitationem corporis
+          accusantium aspernatur architecto. Iure officiis commodi neque
+          exercitationem, minus corporis nobis consequuntur necessitatibus.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit
+          odio odit ab voluptatum quas exercitationem corporis accusantium
+          aspernatur architecto. Iure officiis commodi neque exercitationem,
+          minus corporis nobis consequuntur necessitatibus.
+        </div>
+        <div class="cont" id="cont3">
+          <h3>Content 3</h3>
+          Officiis commodi neque exercitationem, minus corporis nobis
+          consequuntur necessitatibus. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Eligendi sit odio odit ab voluptatum quas
+          exercitationem corporis accusantium aspernatur architecto. Iure
+          officiis commodi neque exercitationem, minus corporis nobis
+          consequuntur necessitatibus.
+        </div>
+      </div>
+    </section>
+
+    <section id="count-section" data-aos="fade-up">
+      <h2>Word/Character Count</h2>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Вставьте или напишите текст"
+      ></textarea>
+      <div id="word-count"></div>
+      <div id="char-count"></div>
+    </section>
+
+    <section id="css">
+      <h2>Test h2</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        labore.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        labore.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        labore.
+      </p>
+      <h3>Test h3</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        labore.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        labore.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        labore.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        labore.
+      </p>
+    </section>
+
+    <div id="modal">
+      <h2>Это модальное окно</h2>
+      <p>Нажмите на кнопку, чтобы закрыть</p>
+      <button id="modal-close">X Закрыть</button>
+    </div>
+
+    <button id="scroll-btn">SCROLL UP</button>
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          Slide 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          ex incidunt doloremque aperiam quaerat quae similique aut rem,
+          veritatis, cum culpa. Adipisci officiis amet molestias nihil
+          doloremque odit harum unde. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Perferendis, architecto. Quas quae, eaque,
+          asperiores adipisci illo eius nisi doloremque minus aperiam cupiditate
+          quam architecto iure quo nihil modi labore nostrum!
+        </div>
+        <div class="swiper-slide">
+          Slide 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          ex incidunt doloremque aperiam quaerat quae similique aut rem,
+          veritatis, cum culpa. Adipisci officiis amet molestias nihil
+          doloremque odit harum unde. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Perferendis, architecto. Quas quae. quam architecto
+          iure quo nihil modi labore nostrum!
+        </div>
+        <div class="swiper-slide">
+          Slide 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          ex incidunt doloremque aperiam quaerat quae similique aut rem,
+          veritatis, cum culpa. Adipisci officiis amet molestias nihil
+          doloremque odit harum unde. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Perferendis, architecto. Quas quae, eaque,
+          asperiores adipisci illo eius nisi doloremque minus aperiam cupiditate
+          quam architecto iure quo nihil!
+        </div>
+        <div class="swiper-slide">
+          Slide 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          ex incidunt doloremque aperiam quaerat quae similique aut rem,
+          veritatis, cum culpa. Adipisci officiis amet molestias nihil
+          doloremque odit harum unde. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Perferendis, architecto. Quas quae, eaque,
+          asperiores adipisci illo eius nisi doloremque minus aperiam cupiditate
+          quam architecto iure quo nihil!
+        </div>
+        <div class="swiper-slide">
+          Slide 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          ex incidunt doloremque aperiam quaerat quae similique aut rem,
+          veritatis, cum culpa. Adipisci officiis amet molestias nihil
+          doloremque odit harum unde. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Perferendis, architecto. Quas quae, eaque,
+          asperiores adipisci illo eius nisi doloremque minus aperiam cupiditate
+          quam architecto iure quo nihil!
+        </div>
+        <div class="swiper-slide">
+          Slide 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          ex incidunt doloremque aperiam quaerat quae similique aut rem,
+          veritatis, cum culpa. Adipisci officiis amet molestias nihil
+          doloremque odit harum unde. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Perferendis, architecto. Quas quae, eaque,
+          asperiores adipisci illo eius nisi doloremque minus aperiam cupiditate
+          quam architecto iure quo nihil!
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-controls">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+    </div>
+
+    <footer>
+      <section>
+        <h2>Модальное окно</h2>
+        <button id="modal-btn">Открыть модальное окно</button>
+      </section>
+      This was practice lesson for DOM Manipulation in JavaScrip
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="btn.js"></script>
+    <script src="scroll.js"></script>
+    <script src="accordeon.js"></script>
+    <script src="counter.js"></script>
+    <script src="./modal.js"></script>
+    <script src="tab.js"></script>
+  </body>
+</html>
